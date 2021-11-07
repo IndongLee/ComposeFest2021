@@ -39,7 +39,14 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 private fun MyApp(names: List<String> = listOf("World", "Compose")) {
-    Greetings()
+    var shouldShowOnboarding by remember {
+        mutableStateOf(false)
+    }
+    if (shouldShowOnboarding) {
+        OnboardingScreen()
+    } else {
+        Greetings()
+    }
 }
 
 @Composable
