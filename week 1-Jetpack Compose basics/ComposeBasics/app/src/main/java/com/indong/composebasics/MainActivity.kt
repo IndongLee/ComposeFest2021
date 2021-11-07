@@ -9,6 +9,8 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material.Button
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.OutlinedButton
@@ -38,9 +40,9 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-private fun MyApp(names: List<String> = listOf("World", "Compose")) {
+private fun MyApp() {
     var shouldShowOnboarding by remember {
-        mutableStateOf(false)
+        mutableStateOf(true)
     }
     if (shouldShowOnboarding) {
         OnboardingScreen { shouldShowOnboarding = false }
@@ -50,12 +52,10 @@ private fun MyApp(names: List<String> = listOf("World", "Compose")) {
 }
 
 @Composable
-private fun Greetings(names: List<String> = listOf("World", "Compose")) {
-    Surface(color = MaterialTheme.colors.background) {
-        Column {
-            for (name in names) {
-                Greeting(name = name)
-            }
+private fun Greetings(names: List<String> = List(1000) { "$it" }) {
+    LazyColumn(modifier = Modifier.padding(vertical = 4.dp)) {
+        items(items = names) { name ->
+            Greeting(name = name)
         }
     }
 }
