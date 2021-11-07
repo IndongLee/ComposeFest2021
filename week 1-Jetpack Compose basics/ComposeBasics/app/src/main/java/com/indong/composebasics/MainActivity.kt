@@ -3,6 +3,7 @@ package com.indong.composebasics
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -63,8 +64,10 @@ private fun Greetings(names: List<String> = List(1000) { "$it" }) {
 
 @Composable
 private fun Greeting(name: String) {
-    val expended = remember { mutableStateOf(false) }
-    val extraPadding = if (expended.value) 48.dp else 0.dp
+    var expended by remember { mutableStateOf(false) }
+    val extraPadding by animateDpAsState(
+        if (expended) 48.dp else 0.dp
+    )
 
     Surface(
         color = MaterialTheme.colors.primary,
@@ -78,8 +81,8 @@ private fun Greeting(name: String) {
                 Text(text = "Hello,")
                 Text(text = name)
             }
-            OutlinedButton(onClick = { expended.value = !expended.value }) {
-                Text(text = if (expended.value) "Show less" else "Show more")
+            OutlinedButton(onClick = { expended = !expended }) {
+                Text(text = if (expended) "Show less" else "Show more")
             }
         }
     }
