@@ -39,13 +39,17 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 private fun MyApp(names: List<String> = listOf("World", "Compose")) {
+    Greetings()
+}
+
+@Composable
+private fun Greetings(names: List<String> = listOf("World", "Compose")) {
     Surface(color = MaterialTheme.colors.background) {
         Column {
             for (name in names) {
                 Greeting(name = name)
             }
         }
-        Greeting("Android")
     }
 }
 
