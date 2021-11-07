@@ -27,8 +27,13 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-private fun MyApp() {
+private fun MyApp(names: List<String> = listOf("World", "Compose")) {
     Surface(color = MaterialTheme.colors.background) {
+        Column {
+            for (name in names) {
+                Greeting(name = name)
+            }
+        }
         Greeting("Android")
     }
 }
@@ -47,6 +52,6 @@ private fun Greeting(name: String) {
 @Composable
 private fun DefaultPreview() {
     ComposeBasicsTheme {
-        Greeting("Android")
+        MyApp()
     }
 }
