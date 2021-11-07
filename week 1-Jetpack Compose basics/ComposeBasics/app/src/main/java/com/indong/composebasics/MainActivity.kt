@@ -43,7 +43,7 @@ private fun MyApp(names: List<String> = listOf("World", "Compose")) {
         mutableStateOf(false)
     }
     if (shouldShowOnboarding) {
-        OnboardingScreen()
+        OnboardingScreen { shouldShowOnboarding = false }
     } else {
         Greetings()
     }
@@ -85,7 +85,7 @@ private fun Greeting(name: String) {
 }
 
 @Composable
-fun OnboardingScreen() {
+fun OnboardingScreen(onContinueClicked: () -> Unit) {
     // TODO: This state should be hoisted
     var shouldShowOnboarding by remember { mutableStateOf(true) }
 
@@ -98,7 +98,7 @@ fun OnboardingScreen() {
             Text("Welcome to the Basics Codelab!")
             Button(
                 modifier = Modifier.padding(vertical = 24.dp),
-                onClick = { shouldShowOnboarding = false }
+                onClick = onContinueClicked
             ) {
                 Text("Continue")
             }
@@ -110,7 +110,7 @@ fun OnboardingScreen() {
 @Composable
 fun OnboardingPreview() {
     ComposeBasicsTheme {
-        OnboardingScreen()
+        OnboardingScreen { }
     }
 }
 
