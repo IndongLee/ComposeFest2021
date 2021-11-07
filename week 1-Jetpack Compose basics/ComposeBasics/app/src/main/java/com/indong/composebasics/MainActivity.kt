@@ -153,7 +153,7 @@ fun OnboardingPreview() {
     }
 }
 
-@Preview(showBackground = true, uiMode = UI_MODE_NIGHT_YES, name = "DefaultPreviewDark")
+@Preview(showBackground = true, name = "DefaultPreview")
 @Composable
 private fun DefaultPreview() {
     ComposeBasicsTheme {
