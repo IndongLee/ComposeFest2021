@@ -84,6 +84,11 @@ fun TodoScreen(
 }
 
 @Composable
+fun TodoInputTextField(text: String, onTextChanged: (String) -> Unit, modifier: Modifier) {
+    TodoInputText(text, onTextChanged, modifier)
+}
+
+@Composable
 fun TodoItemInput(onItemComplete: (TodoItem) -> Unit) {
     Column {
         Row(
