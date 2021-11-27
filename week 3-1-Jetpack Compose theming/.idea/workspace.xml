@@ -132,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638023960500</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="week 3-1 : Header에 Surface 적용.">
+      <created>1638024725162</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1638024725162</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -143,6 +150,7 @@
     <MESSAGE value="week 3-1 : 타이포그래피." />
     <MESSAGE value="week 3-1 : Shape." />
     <MESSAGE value="week 3-1 : 다크모드 테마." />
-    <option name="LAST_COMMIT_MESSAGE" value="week 3-1 : 다크모드 테마." />
+    <MESSAGE value="week 3-1 : Header에 Surface 적용." />
+    <option name="LAST_COMMIT_MESSAGE" value="week 3-1 : Header에 Surface 적용." />
   </component>
 </project>
