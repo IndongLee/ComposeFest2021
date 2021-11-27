@@ -40,6 +40,7 @@ class TodoViewModel : ViewModel() {
 
     fun removeItem(item: TodoItem) {
         todoItems.remove(item)
+        onEditDone()
     }
 
     fun onEditItemSelected(item: TodoItem) {
