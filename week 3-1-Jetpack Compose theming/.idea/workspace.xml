@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
@@ -48,6 +53,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -75,6 +81,42 @@
       <option name="presentableId" value="Default" />
       <updated>1638003229747</updated>
     </task>
+    <task id="LOCAL-00001" summary="week 3-1 : 테마 파일 생성.">
+      <created>1638023376317</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638023376317</updated>
+    </task>
+    <task id="LOCAL-00002" summary="week 3-1 : JetNewsTheme 적용.">
+      <created>1638023487342</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1638023487342</updated>
+    </task>
+    <task id="LOCAL-00003" summary="week 3-1 : Colors 파일 생성.">
+      <created>1638023535097</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1638023535097</updated>
+    </task>
+    <task id="LOCAL-00004" summary="week 3-1 : Themes에 컬러 추가.">
+      <created>1638023605880</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1638023605880</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="week 3-1 : 테마 파일 생성." />
+    <MESSAGE value="week 3-1 : JetNewsTheme 적용." />
+    <MESSAGE value="week 3-1 : Colors 파일 생성." />
+    <MESSAGE value="week 3-1 : Themes에 컬러 추가." />
+    <option name="LAST_COMMIT_MESSAGE" value="week 3-1 : Themes에 컬러 추가." />
   </component>
 </project>
