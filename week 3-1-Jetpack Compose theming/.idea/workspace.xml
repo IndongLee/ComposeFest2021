@@ -10,6 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8edf17ae-d219-4434-b4bf-6884a8181853" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codelab/theming/ui/start/Home.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codelab/theming/ui/start/Home.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638024725162</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="week 3-1 : CompositionLocalProvider.">
+      <created>1638025402652</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1638025402652</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -151,6 +159,7 @@
     <MESSAGE value="week 3-1 : Shape." />
     <MESSAGE value="week 3-1 : 다크모드 테마." />
     <MESSAGE value="week 3-1 : Header에 Surface 적용." />
-    <option name="LAST_COMMIT_MESSAGE" value="week 3-1 : Header에 Surface 적용." />
+    <MESSAGE value="week 3-1 : CompositionLocalProvider." />
+    <option name="LAST_COMMIT_MESSAGE" value="week 3-1 : CompositionLocalProvider." />
   </component>
 </project>
