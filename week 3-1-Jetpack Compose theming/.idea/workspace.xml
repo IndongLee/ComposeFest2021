@@ -10,7 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8edf17ae-d219-4434-b4bf-6884a8181853" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codelab/theming/ui/start/Home.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codelab/theming/ui/start/Home.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +146,21 @@
       <option name="project" value="LOCAL" />
       <updated>1638025402652</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="week 3-1 : 텍스트 스타일.">
+      <created>1638080325701</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1638080325701</updated>
+    </task>
+    <task id="LOCAL-00011" summary="week 3-1 : Modifier.clip을 써서 Shape를 적용할 수 있음.">
+      <created>1638080475637</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1638080475637</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -160,6 +173,8 @@
     <MESSAGE value="week 3-1 : 다크모드 테마." />
     <MESSAGE value="week 3-1 : Header에 Surface 적용." />
     <MESSAGE value="week 3-1 : CompositionLocalProvider." />
-    <option name="LAST_COMMIT_MESSAGE" value="week 3-1 : CompositionLocalProvider." />
+    <MESSAGE value="week 3-1 : 텍스트 스타일." />
+    <MESSAGE value="week 3-1 : Modifier.clip을 써서 Shape를 적용할 수 있음." />
+    <option name="LAST_COMMIT_MESSAGE" value="week 3-1 : Modifier.clip을 써서 Shape를 적용할 수 있음." />
   </component>
 </project>
