@@ -22,6 +22,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Scaffold
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -67,7 +68,15 @@ fun RallyApp() {
                 startDestination = RallyScreen.Overview.name,
                 modifier = Modifier.padding(innerPadding)
             ) {
-                // Todo
+                composable(RallyScreen.Overview.name) {
+                    Text(RallyScreen.Overview.name)
+                }
+                composable(RallyScreen.Accounts.name) {
+                    Text(RallyScreen.Accounts.name)
+                }
+                composable(RallyScreen.Bills.name) {
+                    Text(RallyScreen.Bills.name)
+                }
             }
         }
     }
