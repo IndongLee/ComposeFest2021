@@ -3,6 +3,7 @@ package com.example.compose.rally
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithContentDescription
+import androidx.compose.ui.test.performClick
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import org.junit.Before
@@ -26,6 +27,16 @@ class RallyHavHostTest {
     fun rallyNavHost() {
         composeTestRule
             .onNodeWithContentDescription("Overview Screen")
+            .assertIsDisplayed()
+    }
+
+    @Test
+    fun rallyNavHost_navigateToAllAccounts_viaUI() {
+        composeTestRule
+            .onNodeWithContentDescription("All Accounts")
+            .performClick()
+        composeTestRule
+            .onNodeWithContentDescription("Accounts Screen")
             .assertIsDisplayed()
     }
 }
