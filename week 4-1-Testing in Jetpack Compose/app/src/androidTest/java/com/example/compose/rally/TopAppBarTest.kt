@@ -41,6 +41,8 @@ class TopAppBarTest {
             )
         }
 
+        composeTestRule.onRoot(useUnmergedTree = true).printToLog("currentLabelExists")
+
         composeTestRule
             .onNodeWithContentDescription(RallyScreen.Accounts.name.toUpperCase())
             .assertExists()
